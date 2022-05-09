@@ -1,6 +1,7 @@
 import './App.css';
 import { Navbar, NavbarBrand } from 'reactstrap';
 import { Component } from 'react';
+import Menu from './components/MenuComponent';
 
 class App extends Component {
 
@@ -19,6 +20,7 @@ class App extends Component {
           </div>
 
         </Navbar>
+        <Menu />
 
       </div>
 
