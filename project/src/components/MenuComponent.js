@@ -42,7 +42,9 @@ class Menu extends Component {
 
             return (
 
-                <Card>
+                <Card key={dish.id}
+
+                    onClick={() => this.props.onClick(dish.id)}>
 
                     <CardImg top src={dish.image} alt={dish.name} />
 
@@ -114,7 +116,7 @@ class Menu extends Component {
 
                     <div className="col-12 col-md-5 m-1">
 
-                        {this.renderDish(this.state.selectedDish)}
+                        {this.renderDish(this.props.dishes[this.props.selectedDish])}
 
                     </div>
 
